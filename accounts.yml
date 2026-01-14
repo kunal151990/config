@@ -2,7 +2,7 @@ build:
   version: "3.0"
 
 accounts:
-  message: "Welcome to jkjk  related docker APIs "
+  message: "Welcome to asdf  related docker APIs "
   contactDetails:
     name: "John Doe - Developer"
     email: "john@eazybank.com"
