@@ -1,0 +1,31 @@
+server:
+  port: 8080
+  forward-headers-strategy: framework
+
+  servlet:
+    session:
+      cookie:
+        name: ACCOUNTS_SESSION
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  sql:
+    init:
+      mode: always
+
+  cloud:
+    openfeign:
+      circuitbreaker:
+        enabled: true
+
+info:
+  app:
+    name: accounts
+    description: Finance Application
+    version: 1.0.0
+
+keycloak:
+  realm: finance
