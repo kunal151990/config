@@ -10,7 +10,11 @@ spring:
 
         provider:
           keycloak:
-            issuer-uri: http://localhost:8181/realms/finance
+            authorization-uri: http://localhost:8181/realms/finance/protocol/openid-connect/auth
+            token-uri: http://keycloak:8080/realms/finance/protocol/openid-connect/token
+            user-info-uri: http://keycloak:8080/realms/finance/protocol/openid-connect/userinfo
+            jwk-set-uri: http://keycloak:8080/realms/finance/protocol/openid-connect/certs
+            user-name-attribute: preferred_username
 
   data:
     redis:
