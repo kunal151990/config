@@ -1,0 +1,20 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-secret: fdNGyvOON2qp6cKY6X9uzMAWTaCJoXnhG4KW12wwqIbokIqJoYQnSKobUIRZ7ZDNNahZAFa0mVP5CIORwXiiJF
+
+            redirect-uri: "http://localhost:8072/login/oauth2/code/keycloak"
+
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8180/realms/finance
+
+  data:
+    redis:
+      connect-timeout: 2s
+      host: localhost
+      port: 6379
+      timeout: 1s
