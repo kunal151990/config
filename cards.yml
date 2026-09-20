@@ -1,11 +1,17 @@
-build:
-  version: "3.0"
+server:
+  port: 7000
+  forward-headers-strategy: framework
 
-cards:
-  message: "Welcome to EazyBank cards related local APIs "
-  contactDetails:
-    name: "Dragos Lech - Developer"
-    email: "dragos@eazybank.com"
-  onCallSupport:
-    - (412) 419-3491
-    - (915) 382-1932
+spring:
+  jpa:
+    show-sql: true
+
+  sql:
+    init:
+      mode: always
+
+info:
+  app:
+    name: cards
+    description: Finance Application
+    version: 1.0.0
