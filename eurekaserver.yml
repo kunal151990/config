@@ -5,9 +5,8 @@ eureka:
   instance:
     prefer-ip-address: false
     hostname: localhost
-    nonSecurePort: 8080
+    nonSecurePort: 8070
+
   client:
-    fetchRegistry: false
-    registerWithEureka: false
-  
-    
+    fetch-registry: false
+    register-with-eureka: false
