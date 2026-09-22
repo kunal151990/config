@@ -21,7 +21,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8181/realms/finance
-          jwk-set-uri: http://keycloak:8180/realms/finance/protocol/openid-connect/certs
+          jwk-set-uri: http://keycloak:8080/realms/finance/protocol/openid-connect/certs
 
 eureka:
   client:
