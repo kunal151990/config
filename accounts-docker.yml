@@ -1,4 +1,6 @@
 spring:
+  kafka:
+    bootstrap-servers: kafka:9092
   datasource:
     url: jdbc:mysql://accountsdb:3306/accountsdb
     username: root
