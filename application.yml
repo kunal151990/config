@@ -19,7 +19,6 @@ management:
 
   endpoint:
     prometheus:
-      enabled: true
       access: read-only
 
     shutdown:
